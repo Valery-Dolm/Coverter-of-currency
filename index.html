@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="overbody"></div>
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -35,21 +36,12 @@
         <div class="mainBlock__fields">
             <div class="mainBlock__container">
                 <p>У меня есть</p>
-                <div class="mainBlock__currencyList">
-                    <button class="money">
-                        RUB
-                    </button>
-                    <button class="money">
-                        USD
-                    </button>
-                    <button class="money">
-                        EUR
-                    </button>
-                    <button class="money">
-                        GBP
-                    </button>                    
-                        <select>
-                            <!--<option>BYR</option>-->
+                <div class="mainBlock__currencyListLeft">
+                    <button class="money rub active">RUB</button>
+                    <button class="money usd">USD</button>
+                    <button class="money eur">EUR</button>
+                    <button class="money gbp">GBP</button>                    
+                        <select class="money">
                             <option>HKD</option>
                             <option>IDR</option>
                             <option>ILS</option>
@@ -59,7 +51,6 @@
                             <option>MXN</option>
                             <option>CZK</option>
                             <option>SGD</option>
-                            <option>BYR</option>
                             <option>THB</option>
                             <option>HRK</option>
                             <option>MYR</option>
@@ -79,11 +70,11 @@
                             <option>KRW</option>
                             <option>HUF</option>
                             <option>AUD</option>
-                        </select>                   
+                        </select>
                 </div>
                 <div class="mainBlock__input">
-                    <input class="inputzone" type="text"></input>
-                    <div class="inputzone__extra">1 RUB = 0.0135 USD</div>                    
+                    <input class="inputzone__left" type="text" value="1"></input>
+                    <div class="inputzone-extra__left"></div>
                 </div>
             </div>
             <div class="mainBlock__arrowSign">
@@ -91,21 +82,12 @@
             </div>
             <div class="mainBlock__container">
                 <p>Хочу приобрести</p>
-                <div class="mainBlock__currencyList">
-                    <button class="money">
-                        RUB
-                    </button>
-                    <button class="money">
-                        USD
-                    </button>
-                    <button class="money">
-                        EUR
-                    </button>
-                    <button class="money">
-                        GBP
-                    </button>
-                        <select>
-                            <!--<option>BYR</option>-->
+                <div class="mainBlock__currencyListRight">
+                    <button class="money rub">RUB</button>
+                    <button class="money usd active">USD</button>
+                    <button class="money eur">EUR</button>
+                    <button class="money gbp">GBP</button>
+                        <select class="money">
                             <option>HKD</option>
                             <option>IDR</option>
                             <option>ILS</option>
@@ -115,7 +97,6 @@
                             <option>MXN</option>
                             <option>CZK</option>
                             <option>SGD</option>
-                            <option>BYR</option>
                             <option>THB</option>
                             <option>HRK</option>
                             <option>MYR</option>
@@ -138,12 +119,12 @@
                         </select> 
                     </div>
                 <div class="mainBlock__input">
-                    <input class="inputzone" type="text"></input>
-                    <div class="inputzone__extra">1 USD = 73.8896 RUB</div>
+                    <input class="inputzone__right" type="text"></input>
+                    <div class="inputzone-extra__right"></div>
                 </div>
             </div>
         </div>        
     </main>
-    <!--<script src="script.js"></script>-->   
+    <script src="script.js"></script>   
 </body>
 </html>
